@@ -3,7 +3,13 @@
 <head>
     <title>TDEE Calculator</title>
     <style>
-        body {background-color: powderblue;}
+        body
+        {
+        background-color: powderblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
         h1   {color: blue;}
         h3    {color: rgb(255, 0, 140);}
         button {color: #5100ff;cursor: pointer;}
@@ -28,7 +34,7 @@
         <option value="1.725">ออกกำลังกาย 6-7 วัน/สัปดาห์</option>
         <option value="1.9">ทุกวัน วันละ 2 เวลา</option>
     </select></h3><br>
-    <button onclick="calculateTDEE()">Calculate</button>
+    <button onclick="calculateTDEE()">Calculate</button><br>
     <button><a href="tdeecover.html">กลับ</a></button>
     <h1 id="resultday"></h1>
     <h1 id="resultweek"></h1>

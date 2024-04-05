@@ -6,8 +6,8 @@ function calculateTDEE() {
     let activity = document.getElementById("inputActivity").value
     
     if (age === "" || weight === "" || height === "") {
-        document.getElementById("resultday").innerHTML = "กรุณากรอกข้อมูลให้ครบทุกช่อง";
-        document.getElementById("resultweek").innerHTML = "";
+        document.getElementById("resultday").innerHTML = "กรุณากรอกข้อมูลให้ครบทุกช่อง"
+        document.getElementById("resultweek").innerHTML = ""
     } else {
         let bmr = calculateBMR(gender, age, weight, height)
     
