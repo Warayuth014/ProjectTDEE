@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TDEE Calculator</title>
+    <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        h3    {color: rgb(255, 0, 140);}
+        button {color: #5100ff;cursor: pointer;}
+        a {text-decoration: none;}
+    </style>
+</head>
+<body>
+    <h1>โปรแกรม TDEE Calculator</h1>
+    <h3>Gender 
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br></h3>
+
+    <h3>Age <input id="inputAge" type="text"/></h3>
+    <h3>Weight <input id="inputWeight" type="text"/></h3>
+    <h3>Height <input id="inputHeight" type="text"/></h3>
+    <h3>Activity 
+    <select id="inputActivity">
+        <option value="1.375">ออกกำลังกาย 1-2 วัน/สัปดาห์</option>
+        <option value="1.55">ออกกำลังกาย 3-5 วัน/สัปดาห์</option>
+        <option value="1.725">ออกกำลังกาย 6-7 วัน/สัปดาห์</option>
+        <option value="1.9">ทุกวัน วันละ 2 เวลา</option>
+    </select></h3><br>
+    <button onclick="calculateTDEE()">Calculate</button>
+    <button><a href="tdeecover.html">กลับ</a></button>
+    <h1 id="resultday"></h1>
+    <h1 id="resultweek"></h1>
+    <script src="js/tdee.js"></script>
+</body>
+</html>
