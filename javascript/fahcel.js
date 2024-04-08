@@ -16,7 +16,9 @@ alert(toFahrenheit(150))
 document.getElementById("fahrenheit").innerHTML = "<b>"+toFahrenheit(150)+"</b>"*/
 function toCelsiusProgram(value1){
     alert(toCelsius(value1))
+    document.getElementById("Celsius").innerHTML = toCelsius(value1)
 }
 function toFahrenheitProgram(value2){
     alert(toFahrenheit(value2))
+    document.getElementById("Fahrenheit").innerHTML = toFahrenheit(value2)
 }
